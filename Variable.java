@@ -10,5 +10,7 @@ public class Variable{
  		double A2$ = 5.5;  // 64 bit - %f
  		char A2_$;  // 16 bit - %c
  		String A$_2;  // %s
+
+ 		var A=1;	// var variable must be initialized
  	}
 }
