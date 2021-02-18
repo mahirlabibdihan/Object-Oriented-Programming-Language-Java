@@ -7,4 +7,4 @@ public class Package{
 }
 
 // Compile : javac -d . Package.java
-// Run : java Dihan.Package
+// Run : java Dihan.Package 

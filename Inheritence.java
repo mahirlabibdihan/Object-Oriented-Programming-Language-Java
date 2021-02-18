@@ -39,7 +39,6 @@ class Dog extends Animal{
 public class Inheritence{
 	public static void main(String[] args){
 		Dog Tom=new Dog("Tom",100,50);
-
 		Tom.Details();
 	}
 }

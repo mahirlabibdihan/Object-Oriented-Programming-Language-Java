@@ -17,7 +17,6 @@ class Dog extends Animal{
 }
 public class Learn{
     public static void main(String[] args){     
-        
         System.out.print("Hello ");
         System.out.println("World");   // Output
         System.out.printf("Hello World\n");

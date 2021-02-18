@@ -44,6 +44,7 @@ public class string{
 		System.out.println(s9.compareTo(s8));
 
 
+
 		// == compares the String , also the way it is created
 		// System.out.println(s2 == s3);	// false
 		// System.out.println(s3 == s4);	// true

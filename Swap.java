@@ -10,3 +10,4 @@ public class Swap {
 		System.out.println(x+" "+y);
 	}
 }
+ 
