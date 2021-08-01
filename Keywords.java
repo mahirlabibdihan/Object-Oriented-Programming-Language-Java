@@ -1,4 +1,4 @@
-abstract	
+/*abstract
 continue	
 for	
 new	
@@ -47,4 +47,4 @@ const
 float	
 native	
 super	
-while
+while*/
