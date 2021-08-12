@@ -12,7 +12,7 @@ interface Cat extends Animal{
 }
 
 // Implementing Interface
-class Dog implements Animal{
+class Dog extends Animal{
 	@Override
 	public void call()
 	{

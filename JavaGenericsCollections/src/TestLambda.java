@@ -1,4 +1,4 @@
-interface MyNumber {
+ interface MyNumber {
     double getValue();
 }
 

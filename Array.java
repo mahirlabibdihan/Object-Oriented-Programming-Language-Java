@@ -1,5 +1,9 @@
 // Array index must be a nonnegative integer
+import java.util.Arrays;
 public class Array {
+	void modifyArray(int a[]){
+		
+	}
 	public static void main(String[] args) {
 		// int x[12]; // Error
 		int x[]=new int[12];
@@ -21,6 +25,10 @@ public class Array {
 		int A[],B;
 
 		int[] C,D;  // int c[],D[];
+
+		// Sorting
+		Arrays.sort(z);
+
 		
 	}
 }
