@@ -12,5 +12,11 @@ public class Command_Line_Argument {
 		{
 			System.out.println(args[i]);
 		}
+
+		// Cmd: java ClassName 1 2 3
+		// Output:
+		// 1
+		// 2
+		// 3
 	}
 }

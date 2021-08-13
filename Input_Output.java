@@ -58,6 +58,7 @@ public class Input_Output
 		System.out.println("Input : "+j);
 		System.out.printf("Input : %s\n",j);
 
+		// Single character
 		char k=sc.next().charAt(0);
 		System.out.println("Input : "+k);
 		System.out.printf("Input : %c\n",k);

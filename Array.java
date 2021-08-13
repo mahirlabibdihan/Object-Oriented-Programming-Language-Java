@@ -29,6 +29,19 @@ public class Array {
 		// Sorting
 		Arrays.sort(z);
 
+
+		// Printing
+		for(int i:y){
+			System.out.println(i);
+		}
+
+		int X[][] = {{1,2,3},{4,5,6},{7,8,9}};
+
+		for(int[] i:X){
+			for(int j:i){
+				System.out.println(j);
+			}
+		}
 		
 	}
 }

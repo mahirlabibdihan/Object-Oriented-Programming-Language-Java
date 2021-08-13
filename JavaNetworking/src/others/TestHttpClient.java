@@ -1,5 +1,3 @@
-package others;
-
 import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -13,7 +11,7 @@ import java.util.Set;
 public class TestHttpClient {
     public static void main(String[] args) throws Exception {
         HttpClient httpClient = HttpClient.newHttpClient();
-        HttpRequest httpRequest = HttpRequest.newBuilder(new URI("https://cse.buet.ac.bd/nsyss2021/")).build();
+        HttpRequest httpRequest = HttpRequest.newBuilder(new URI("https://mahirlabibdihan.github.io/work/")).build();
         HttpResponse<InputStream> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofInputStream());
         //HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
         //HttpResponse<Stream<String>> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofLines());

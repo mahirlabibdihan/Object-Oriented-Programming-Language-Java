@@ -1,5 +1,3 @@
-package others;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +10,7 @@ public class TestHttpURL {
     public static void main(String[] args) {
         HttpURLConnection connection = null;
         try {
-            URL url = new URL("https://cse.buet.ac.bd/nsyss2021/");
+            URL url = new URL("https://mahirlabibdihan.github.io/work/");
             connection = (HttpURLConnection) url.openConnection();
             connection.connect();
             InputStream is = connection.getInputStream();

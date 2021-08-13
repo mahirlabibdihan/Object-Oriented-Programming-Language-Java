@@ -51,3 +51,9 @@ public class string{
  	}
 
 }
+
+
+// Mutable
+class String_Buffer{
+
+}
