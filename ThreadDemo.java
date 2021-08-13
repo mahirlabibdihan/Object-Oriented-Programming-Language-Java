@@ -3,6 +3,7 @@ import java.lang.Thread;
 import java.lang.Runnable;
 
 
+// Runnable is a Functional Interface
 /*
 class Thread extends Object implements Runnable{
 	public Thread(){
