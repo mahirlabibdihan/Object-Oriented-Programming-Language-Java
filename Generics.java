@@ -25,7 +25,11 @@ class MyGenerics2<T,S>{
 interface iStack<T>{
 
 }
-class MyStack<T> implements iStack<T>{
+class MyStack implements iStack<Integer>{
+
+}
+
+class MyStack2<T> implements iStack<T>{
 
 }
 

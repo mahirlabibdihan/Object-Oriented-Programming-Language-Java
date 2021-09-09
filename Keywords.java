@@ -1,50 +1,75 @@
-/*abstract
-continue	
-for	
-new	
-switch
-assert
-default	
-goto
-package	
-synchronized
-boolean	
-do	
-if	
-private
-this
-break	
-double	
-implements	
-protected	
-throw
-byte	
-else	
-import	
-public	
-throws
-case	
-enum
-instanceof	
-return	
-transient
-catch	
-extends	
-int	
-short	
-try
-char	
-final	
-interface	
-static	
-void
-class	
-finally	
-long	
-strictfp	
-volatile
-const	
-float	
-native	
-super	
-while*/
+/*
+Total 52 keywords.
+Data Type:
+	int	
+	short
+	char
+	boolean
+	void
+	float
+	double
+	byte
+	long
+	var
+
+Conditional Statement Related:
+	if	
+	else
+	switch
+	default
+	case
+
+Loop Related:
+	for	
+	continue
+	do
+	break
+	while
+
+Access modifiers:
+	private
+	protected
+	public
+
+Non-Access modifiers:
+	abstract
+	transient
+	final	
+	static	
+	synchronized
+	native	
+	volatile
+
+Exception Handling:
+	try
+	finally
+	throws
+	throw
+	catch
+
+Inheritence Related:
+	implements
+	extends
+	super
+
+Identifiers:
+	enum
+	interface
+	class
+
+Operator:
+	new	
+
+Pointer:
+	this	
+
+Others:	
+	assert
+	package		
+	import	
+	instanceof	
+	return	
+	strictfp
+	goto ( Not in use )		
+	const ( Not in use )
+*/

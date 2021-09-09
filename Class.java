@@ -6,6 +6,8 @@
 
 // The source file name must match the name of the public class defined in the file with the .java extension
 
+// Methods inside a normal class must have body. It means methods can't be declared, must be defined
+
 class Animal{
 	private String name="Dihan";
 	public void PrintName()
@@ -14,7 +16,7 @@ class Animal{
 	}
 }
 
-private class Class{
+class Class{
 	public static void main(String[] args)
 	{
 		Animal Dog=new Animal();

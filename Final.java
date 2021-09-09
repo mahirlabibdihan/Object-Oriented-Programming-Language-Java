@@ -13,7 +13,7 @@ class A{
 	}
 }
 
-class B extends A{
+class B extends A{		// Class B can't have a method f
 	void f(){
 
 	}

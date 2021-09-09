@@ -16,7 +16,7 @@ M A H I R     L A B I B     D I H A N
 interface Animal{
 	/*public static final*/ int a=0;	// All variables declared in an interface are implicitly public, static and final
 
-	/*public abstract*/ void call();	// Methods of interface can't be protected/private
+	/*public abstract*/ void call();	// Abstract Methods of interface can't be protected/private
 			         			// Doesn't need to use abstract keyword explicitly
 	// All methods declared in an interface are implicitly public and abstract
  
@@ -35,7 +35,7 @@ interface Animal{
 }
 
 // Extending Interfaces
-interface Cat extends Animal{	// Only Interfacecan extend an Interface
+interface Cat extends Animal{	// Only Interface can extend an Interface
 
 	
 }
@@ -52,7 +52,7 @@ abstract class B implements Animal{   // If a class implements an Interface and 
 
 class Dog implements Animal{
 	@Override
-	public void call()		// While implementing abstract methods of interface we must use public access specifier.
+	public void call()		// While implementing abstract methods of interface we must use public access specifier. [ Which was not a condition for abstract class]
 	{
 
 	}
@@ -84,3 +84,10 @@ public class Interface{
     	// Animal.a=10;
  	}
 }
+
+
+// Why should I declare implemented interface methods as "public"?
+/*
+The abstract methods in interface are implicitly public. They can't be declared as private/protected.
+So, when implementing them in other classes, we should declare them public.As they are public in the interface.
+*/

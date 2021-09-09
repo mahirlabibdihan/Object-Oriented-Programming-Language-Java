@@ -9,8 +9,6 @@ public class createThread{
 	//    (Need to override the public void run() method)
 	// 2. By implementing Runnable Interface
 	//	  (Need to implement the public void run() method)
-	
-	public class ExtendsThread extends 
 }
 public class ThreadDemo{
 	public static void main(String[] args){

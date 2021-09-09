@@ -20,7 +20,7 @@ class B extends A{
 
 class Static{
 	static int a=0,b;
-
+	int c;
 	//Static block: 
 	//–	Initialize static variables.
 	//- Get executed exactly once, when the class is first loaded
@@ -28,6 +28,10 @@ class Static{
 		b=10;
 	}
 
+	// Non-static block
+	{
+		c=0;
+	}
 	void call(){
 		new C1();
 		this.new C1();

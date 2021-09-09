@@ -1,17 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-class TestClassComparator implements Comparator<TestClass> {
-
-    @Override
-    public int compare(TestClass o1, TestClass o2) {
-        return o1.getName().compareTo(o2.getName());
-    }
-}
-
-class TestClass {
+import java.util.*;
+class TestClass implements Comparable<TestClass> {
 
     private String name;
 
@@ -22,9 +10,15 @@ class TestClass {
     public String getName() {
         return this.name;
     }
+
+    @Override
+    public int compareTo(TestClass o) {
+        return this.name.compareTo(o.name);     // Ascending
+        // return o.name.compareTo(this.name);     // Descending
+    }
 }
 
-class ComparatorDemo {
+class ComparableDemo {
 
     public static void printList(List<TestClass> al) {
         for (int i = 0; i < al.size(); i++) {
@@ -44,7 +38,7 @@ class ComparatorDemo {
         al.add(new TestClass("F"));
 
         printList(al);
-        Collections.sort(al, new TestClassComparator());
+        Collections.sort(al);
         printList(al);
     }
 }

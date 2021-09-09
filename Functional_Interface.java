@@ -52,8 +52,7 @@ class Functional_Interface {
 		f(fi1::f1);
 		
 
-		// 4: Static Methpd
-		Functional_Interface fi2 = new Functional_Interface();
+		// 4: Static Method
 		f(()-> Functional_Interface.f2());
 
 		f(Functional_Interface::f2);
