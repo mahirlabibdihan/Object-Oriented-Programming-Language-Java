@@ -5,6 +5,26 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.Objects;
+import java.lang.Object;
+class A{
+    int x,y;
+    A(int x,int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        A a= (A)o;
+        return this.x==a.x&&this.y==a.y;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(x,y);
+    }
+}
 
 class HashMapDemo {
     public static void main(String args[]) {
@@ -30,7 +50,7 @@ class HashMapDemo {
         }
         System.out.println();
 
-         // Using for-each loop
+        // Using for-each loop
         for (Map.Entry mapElement : balance.entrySet()) {
               System.out.println(mapElement.getKey() + ": " + mapElement.getValue());
         }
@@ -47,5 +67,11 @@ class HashMapDemo {
         balance.put(key, bal + 1000);
         System.out.println(key + "'s new balance: " + balance.get(key));
 
+
+        HashMap<A,Integer> map = new HashMap<>();
+        A a = new A(2,3);
+        A b = new A(2,3);
+        map.put(a,10);
+        System.out.println(map.get(b));
     }
 }

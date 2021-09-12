@@ -17,5 +17,9 @@ public class Type_Wrappers{
 
 
 		iOb2++;		// iOb2(Integer) => iOb2(int) => iOb2++ => iOb2(Integer)
+
+		Integer a = 100;
+		Integer b = a;
+		b = 10; // a is still 100. Because
 	}
 }

@@ -1,4 +1,4 @@
-
+/*
 -> javac source.java
 			compile
 source.java -------> source.class
@@ -7,3 +7,4 @@ source.java -------> source.class
 -> java source
 	        JVM
 Bytecode --------> Machine Code	                
+*/

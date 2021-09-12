@@ -9,6 +9,13 @@ M A H I R     L A B I B     D I H A N
 
 */
 
+// TCP stands for Transmission Control Protocol
+
+/*
+-Server: A server is a piece of software which advertises and then provides some service on request
+
+-Client: A client is a piece of software (usually on a different machine) which makes use of some service
+*/
 /*
 TCP Sockets
 - ServerSocket: ServerSocket is used by servers so that they can accept incoming connections from client

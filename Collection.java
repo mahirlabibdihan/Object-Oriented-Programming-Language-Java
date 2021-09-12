@@ -1,4 +1,4 @@
-s/*
+/*
 					 Iterable
 						 |					
 					 Collection

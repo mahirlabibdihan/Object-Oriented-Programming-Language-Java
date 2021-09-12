@@ -26,6 +26,6 @@ public class _Comparable_ {
         tl.add(new Test("C"));
         tl.add(new Test("A"));
 
-        Collections.sort(tl);
+        Collections.sort(t);
     }
 }

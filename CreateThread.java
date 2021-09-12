@@ -1,4 +1,4 @@
-import java.lang.String;
+aimport java.lang.String;
 import java.lang.Thread;
 import java.lang.Runnable;
 
@@ -86,7 +86,8 @@ class ImplementsRunnable2 implements Runnable {
 		System.out.println("A class is created implementing Runnable's method run().");
 	}
 }
-class CreateThread {
+
+public class CreateThread {
 	public void f1() {
 		System.out.println("Non static run method for Runnable");
 	}
@@ -133,44 +134,5 @@ class CreateThread {
 		Thread t7_1 = new Thread(()-> CreateThread.f2());
 		Thread t7_2 = new Thread(CreateThread::f2);
 
-	}
-}
-public class ThreadDemo {
-	public static void main(String[] args) {
-		// Main Thread
-		Thread t = Thread.currentThread();	// Getting the current thread, in this case which is the main thread
-		System.out.println(t);
-		t.setName("Main");	 // Changing thread name
-		System.out.println(t);
-
-
-
-		// Create thread in different ways
-		CreateThread.main();
-
-        Thread t1 = new Thread(()-> {
-			System.out.println("Thread created to join");
-			for(int i=0;i<10;i++){
-				System.out.println(i);
-			}
-		});
-		t1.start();
-        // Join threads with main thread
-		try {
-            // wait for other threads to end
-            t1.join();
-        } catch (InterruptedException e) {
-            System.out.println("Main thread Interrupted");
-        }
-
-        try {
-            Thread.sleep(100); // Put current thread to sleep
-        } catch (InterruptedException e) {
-            System.out.println("Main thread Interrupted");
-        }
-
-        System.out.println(t1.isAlive());   // Checking thread is finished or not	
-
-        System.out.println("Exiting Main thread");
 	}
 }

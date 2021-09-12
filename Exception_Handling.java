@@ -1,3 +1,9 @@
+// Java exception handling is managed via five keywords
+// try
+// catch
+// throw
+// throws
+// finally
 import java.io.IOException;
 class MyException extends Exception {
     String detail;
@@ -15,11 +21,23 @@ public class Exception_Handling{
     	try{
     		c=a/b;
     		System.out.println(a+" / "+b+" = "+c);
-    	} catch(ArithmeticException e){		
+    	} 
+        catch(ArithmeticException e){		
     		System.out.println(e);
     	} catch(NullPointerException e){       
             System.out.println(e);
-        }finally{
+        } 
+
+        // Valid
+        // catch(ArithmeticException | NullPointerException e){
+
+        // }
+
+        // InValid
+        // catch(ArithmeticException | Exception e){
+
+        // }
+        finally{
     		System.out.println("End of Division");
     	}
         throw new MyException("Dihan");

@@ -7,6 +7,7 @@
 // –	println is a public method of the class of which out is an object
 
 // java.io.PrintStream
+/*
 public class PrintStream{
 	public void println( ... ){
 
@@ -18,8 +19,10 @@ public class PrintStream{
 
 	}
 }
-
+*/
 // java.lang.System
+/*
 public class System{
 	public static PrintStream out;
 }
+*/

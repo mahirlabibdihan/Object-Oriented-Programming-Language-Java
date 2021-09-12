@@ -1,9 +1,29 @@
+// Thread safe
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.Objects;
+
+class A{
+    int x,y;
+    A(int x,int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        A a= (A)o;
+        return this.x==a.x&&this.y==a.y;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(x,y);
+    }
+}
 
 class HashTableDemo {
-
     public static void main(String args[]) {
         Hashtable<String, Double> balance = new Hashtable<>();
         String str;
@@ -33,5 +53,11 @@ class HashTableDemo {
         balance.put(key, bal + 1000);
         System.out.println(key + "'s new balance: " + balance.get(key));
 
+
+        Hashtable<A,Integer> map = new Hashtable<>();
+        A a = new A(2,3);
+        A b = new A(2,3);
+        map.put(a,10);
+        System.out.println(map.get(b));
     }
 }

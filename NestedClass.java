@@ -35,6 +35,6 @@ class NestedClass{
 	public static void main(String[] args){
 		NestedClass nc = new NestedClass();
 		NestedClass.InnerClass1 ic1 = nc.new InnerClass1();
-		NestedClass.InnerClass2 ic2 = new InnerClass2();
+		InnerClass2 ic2 = new InnerClass2();
 	}
 }

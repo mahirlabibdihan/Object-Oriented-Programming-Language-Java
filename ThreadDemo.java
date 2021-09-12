@@ -75,6 +75,7 @@ class ImplementsRunnable1 implements Runnable {
 	}
 
 	// This is the entry point for the thread.
+	@Override
 	public void run() {
 		System.out.println("A class is created implementing Runnable's method run(). And passing this class to Thread.");
 	}
@@ -174,3 +175,40 @@ public class ThreadDemo {
         System.out.println("Exiting Main thread");
 	}
 }
+
+// thread.join()
+/*
+What if I join the terminated(dead) thread?
+
+If you look at the source code of Thread::join you will notice that it calls Thread::join(timeout) method. And looking at the source code of this method we can see that it checks status of the thread in a loop by calling Thread::isAlive :
+
+public final synchronized void join(long millis) throws InterruptedException {
+    long base = System.currentTimeMillis();
+    long now = 0;
+
+    if (millis < 0) {
+        throw new IllegalArgumentException("timeout value is negative");
+    }
+
+    if (millis == 0) {
+        while (isAlive()) {
+            wait(0);
+        }
+    } else {
+        while (isAlive()) {
+            long delay = millis - now;
+            if (delay <= 0) {
+                break;
+            }
+            wait(delay);
+            now = System.currentTimeMillis() - base;
+        }
+    }
+}
+
+
+public final void join() throws InterruptedException {
+    join(0);
+}
+
+*/
